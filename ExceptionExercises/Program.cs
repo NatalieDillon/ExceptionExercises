@@ -4,11 +4,10 @@ namespace ExceptionExercises
 {
     internal class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
-            CakeDivision();
-
-            
+            ReadDiary();
+            CakeDivision();                       
         }
 
         public static void ReadDiary()
@@ -29,5 +28,13 @@ namespace ExceptionExercises
             int slices = pizzaSlices / children;
             Console.WriteLine($"Each child will get {slices} slices");
         }
-    }
+
+        public static void DetermineHouse()
+        {
+            Console.WriteLine("Which house do you want to be added to?");
+
+        }
+
+
+}
 }
