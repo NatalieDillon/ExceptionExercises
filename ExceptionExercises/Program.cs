@@ -8,7 +8,7 @@ namespace ExceptionExercises
         {
             //ReadDiary();
             //CakeDivision();
-            DetermineHouse();
+            //DetermineHouse();
         }
 
         public static void ReadDiary()
