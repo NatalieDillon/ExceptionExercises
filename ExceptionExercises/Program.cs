@@ -5,10 +5,19 @@ namespace ExceptionExercises
     internal class Program
     {
         static void Main()
-        {
-            //ReadDiary();
-            //CakeDivision();
+        {            
+            CakeDivision();
             //DetermineHouse();
+            //ReadDiary();
+        }
+               
+        public static void CakeDivision()
+        {
+            int pizzaSlices = 32;
+            Console.WriteLine("Please enter the number of children");
+            int children = Convert.ToInt32(Console.ReadLine());
+            int slices = pizzaSlices / children;
+            Console.WriteLine($"Each child will get {slices} slices");
         }
 
         public static void ReadDiary()
@@ -21,14 +30,6 @@ namespace ExceptionExercises
             }
         }
 
-        public static void CakeDivision()
-        {
-            int pizzaSlices = 32;
-            Console.WriteLine("Please enter the number of children");
-            int children = Convert.ToInt32(Console.ReadLine());
-            int slices = pizzaSlices / children;
-            Console.WriteLine($"Each child will get {slices} slices");
-        }
 
         public static void DetermineHouse()
         {
