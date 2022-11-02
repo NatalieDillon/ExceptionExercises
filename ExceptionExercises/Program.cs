@@ -6,8 +6,9 @@ namespace ExceptionExercises
     {
         static void Main()
         {
-            ReadDiary();
-            CakeDivision();                       
+            //ReadDiary();
+            //CakeDivision();
+            DetermineHouse();
         }
 
         public static void ReadDiary()
@@ -32,7 +33,9 @@ namespace ExceptionExercises
         public static void DetermineHouse()
         {
             Console.WriteLine("Which house do you want to be added to?");
-
+            string userHouse = Console.ReadLine() ?? string.Empty;
+            House house = SortingHat.FindHouse(userHouse);
+            Console.WriteLine($"You have been assigned to {house}");
         }
 
 
